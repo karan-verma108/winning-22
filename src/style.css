@@ -1,0 +1,522 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: whitesmoke;
+}
+.black-strip{
+  display: none;
+}
+header {
+  width: 100%;
+  /* padding: 16px 18px 16px 18px; */
+  padding: 1rem 1.2rem 1rem 1.2rem;
+  background-image: linear-gradient(94deg, #000000, #000000 55%, #000000);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-content {
+  gap: 0.625rem;
+  display: flex;
+  align-items: center;
+}
+.right-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.common-link {
+  text-decoration: none;
+}
+.left-content i {
+  display: block;
+}
+.left-content img {
+  position: relative;
+  bottom: 0.313rem;
+}
+.logo-image {
+  height:1.875rem;
+}
+.search-input {
+  display: none;
+}
+.rules-button {
+  display: none;
+}
+.header-button {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.login-button {
+  color: white;
+  background-color: #b6842d;
+  border-radius: 2px;
+  border: none;
+  padding: 0.313rem 0.625rem;
+}
+.login-button:hover{
+  opacity: 0.87;
+}
+.register-button {
+  background-color: white;
+  color: #b6842d;
+  border-radius: 2px;
+  border: none;
+  padding: 0.313rem 0.625rem;
+}
+.register-button:hover{
+  opacity: 0.87;
+}
+.categories-stripe {
+  display: flex;
+  flex-shrink: 1;
+  overflow-x: auto;
+  background-color: rgba(128, 128, 128, 0.351);
+}
+.strip-child {
+  display: flex;
+  border: 1px solid rgb(197, 196, 196);
+  padding: 6px 15px;
+  flex-direction: column;
+  gap: 2px;
+  min-width: fit-content;
+  justify-content: center;
+  align-items: center; 
+}
+.strip-first-child{
+  background-image: linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+}
+.strip-child img{
+  width: 18px;
+}
+.strip-child p{
+  font-size: 12px;
+  color: #000000;
+}
+.sports-horizontal-list{
+  display: none;
+}
+.sidebar{
+  display: none;
+}
+.scroll-window-right{
+  display: none;
+}
+.photos{
+  display: none;
+}
+.photos {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 325px 325px 512px;
+  /* grid-template-rows: 325px 325px 512px; */
+  gap: 3px;
+}
+.photos img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.photo3 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.photo3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+
+main{
+  width: 100%; /* Default for mobile and tablet */
+  /* max-width: 1200px; Prevents it from becoming too large on very big screens */
+  margin: 0 auto; 
+  justify-content: center; 
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+}
+.gifs {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 65px 65px;
+  column-gap: 2px;
+  row-gap: 2px;
+  padding: 1px;
+}
+.gif {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.gif-container {
+  background-color: white; 
+  padding: 0;
+}
+.gifs :nth-child(7){
+  display: none;
+}
+.gifs :nth-child(8){
+  display: none;
+}
+.main-button{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.main-button button {
+  background-image: linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+  padding: 15px 45px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.main-button button:hover {
+  opacity: 0.8;
+}
+.winbuzz-login-heading{
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-shadow: 2px 2px 10px yellow;
+}
+.scroll-window-container{
+  width: 100%;
+  padding-left:5px ;
+  padding-right:5px ;
+  display: flex;
+  gap: 15px;
+  height: 300px;
+  border: 2px solid red;
+  /* margin-bottom: 100px; */
+}
+.left-scroll-container, .right-scroll-container{
+  flex: 1;
+  /* height: 10%; */
+  overflow-y: auto;
+}
+
+.scroll-window-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  padding: 6px 10px;
+  background-image: linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+}
+.scroll-window-image {
+  cursor: pointer;
+  width: 100%;
+}
+.games-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.img-container img{
+  width: 100%;
+  height: 100%;
+}
+.left-scroll-container{
+  display: none;
+}
+
+
+
+
+
+@media (min-width: 761px) {
+   /* .....Adjust styles for tablets */
+  .left-content i{
+    display: none;
+  }
+  .rules-button {
+    display: inline-block;
+  }
+  .search-input {
+    display: inline-block;
+    width:264px;
+    outline: none;
+    border: 1px solid white;
+    font-size: 0.8rem;
+    background-color: transparent;
+    color: white;
+    padding: 10px 4px 10px 10px;
+    border-radius: 20px;
+  }
+  .header-button {
+    color: #000000;
+    border: 1px solid black;
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: bolder;
+    border-radius: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+  }
+ 
+  .strip-child img{
+    width: 20px;
+  }
+  .strip-child p{
+    font-size: 13px;
+  }
+  .sports-horizontal-list{
+    display: none;
+  }
+  .gifs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 88px 88px;
+    column-gap: 2px;
+    row-gap: 4px;
+  }
+  .gif {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+  .gif-container {
+    background-color: white;
+    border: 1px solid rgba(151, 159, 164, 0.456);
+    padding: 3px;
+    border-radius: 3px;
+  }
+  .gifs :nth-child(7){
+    display: inline-block;
+  }
+  .gifs :nth-child(8){
+    display: inline-block;
+  }
+  .main-button button {
+    padding: 20px 90px;
+    font-size: 19px;
+    border-radius: 30px;
+  }
+  .winbuzz-login-heading{
+    font-size: 4rem;
+    text-shadow: 2px 2px 10px yellow;
+  }
+  .left-scroll-container{
+    display: block;
+  }
+  .scroll-window-container{
+    min-height: 300px;
+  }
+  .photos{
+    display: grid;
+  }
+
+
+ 
+}
+
+@media (min-width: 1230px) {
+  /*....... Adjust styles for laptops */
+
+.black-strip{
+    display: block;
+    width: 100%;
+    /* height: 25px; */
+    height: 3vh;
+    background-color: black;
+  }
+  header {
+    /* padding: 22px 20px 22px 20px; */ 
+    padding: 1.375rem 1.25rem 1.375rem 1.25rem; 
+    background-image: linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+  }
+  .header-button {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0.5rem 0.938rem;
+    font-size: 0.938rem;
+    font-weight: bolder;
+    border-radius: 20px;
+    cursor: pointer;
+    background-image: none;
+  }
+  .login-button, .register-button{
+    color: white;
+  }
+  .logo-image {
+    height: 2.438rem;
+  }
+  .categories-stripe {
+    display:none;
+  }
+  .sports-horizontal-list{
+    display: flex;
+  text-wrap: nowrap;
+  overflow-x: auto;
+  background-color: black;
+  padding: 10px 20px;
+  gap: 35px;
+  }
+  .sport-name {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  .sport-name:hover {
+    color: rgb(198, 198, 198);
+  }
+  .yellow {
+    color: rgb(255, 250, 0);
+  }
+  .yellow:hover {
+    color: rgb(224, 221, 13);
+  }
+  .sidebar{
+    display: flex;
+  }
+  .scroll-window-right{
+    display: flex;
+  }
+  .body-grid{
+    display: grid;
+    grid-template-columns: 1fr 63%  1.25fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  } 
+  .sidebar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  .photos{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  main{
+    width: 100%;
+  }
+  .scroll-window-container{
+    display: none;
+  }
+  .scroll-window-right{
+    width: 100%;
+    padding-left:5px ;
+    padding-right:5px ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid red;
+  }
+  .upper-scroll-container, .lower-scroll-container{
+    flex: 1;
+    /* height: 10%; */
+    overflow-y: auto;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-left: 9px;
+    padding-right: 9px;
+    box-shadow: 0px 5px 8px rgba(151, 159, 164, 0.7);
+  }
+  .tile {
+    flex: 1;
+    color: black;
+    border-bottom: 1px solid rgba(169, 181, 197, 0.359);
+    padding: 10px 15px;
+    display: flex;
+    cursor: pointer;
+  }
+  .tile:hover {
+    background-color: rgb(241, 241, 241);
+  }
+  .sport-icon {
+    height: 20px;
+    width: 20px;
+  }
+  .text-container {
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-wrap: nowrap;
+  }
+  .social-link-heading {
+    margin-top: 12px;
+    margin-left: 15px;
+    color: rgb(80, 80, 80);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .whatsapp-container {
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .wtsp-icon {
+    height: 70px;
+    width: 70px;
+  }
+  .social-link-name {
+    color: black;
+    margin-left: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+  }
+  .telegram-icon {
+    height: 35px;
+    width: 35px;
+    margin-right: 18px;
+    margin-left: 16.5px;
+  }
+  .telegram-container {
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .instagram-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .insta-icon {
+    height: 37px;
+    margin-left: 14px;
+    margin-right: 15px;
+  }
+
+  .photos{
+    display: grid;
+  }
+
+}

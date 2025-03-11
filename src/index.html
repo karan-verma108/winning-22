@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>winBuzz</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Bree+Serif&family=Orbitron:wght@400..900&family=Roboto:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="black-strip"></div>
+    <header>
+      <div class="header-container">
+        <div class="left-content">
+          <a class="common-link" href="http://wa.link/kudo">
+            <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+          </a>
+
+          <a href="http://wa.link/kudo">
+            <img
+              class="logo-image"
+              src="../images/logo.png"
+              alt="winbuzz-logo"
+            />
+          </a>
+        </div>
+        <div class="right-content">
+          <a href="http://wa.link/kudo">
+            <button class="header-button rules-button">RULES</button>
+          </a>
+          <input class="search-input" type="text" placeholder="Search Events" />
+          <a href="http://wa.link/kudo">
+            <button class="header-button login-button white-text">LOGIN</button>
+          </a>
+          <a href="http://wa.link/kudo">
+            <button class="header-button white-text register-button">
+              REGISTER
+            </button>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <a class="common-link" href="http://wa.link/kudo">
+      <div class="categories-stripe">
+        <div class="strip-child strip-first-child">
+          <img src="../strip-icons/in-play.png" alt="" />
+          <p>In Play</p>
+        </div>
+        <div class="strip-child">
+          <img src="../strip-icons/cricket.png" alt="" />
+          <p>Cricket</p>
+        </div>
+        <div class="strip-child">
+          <img src="../strip-icons/football.png" alt="" />
+          <p>Football</p>
+        </div>
+        <div class="strip-child">
+          <img src="../strip-icons/tennis.png" alt="" />
+          <p>Tennis</p>
+        </div>
+        <div class="strip-child">
+          <img src="../strip-icons/politics.png" alt="" />
+          <p>Politics</p>
+        </div>
+        <div class="strip-child">
+          <img src="../strip-icons/casino.png" alt="" />
+          <p>Casino</p>
+        </div>
+        <div class="strip-child">
+          <img src="../strip-icons/int-casino.png" alt="" />
+          <p>Int Casino</p>
+        </div>
+        <div class="strip-child">
+          <img src="../strip-icons/sports-book.png" alt="" />
+          <p>Sports Book</p>
+        </div>
+        <div class="strip-child">
+          <img src="../strip-icons/horse-racing.png" alt="" />
+          <p>Horse Racing</p>
+        </div>
+        <div class="strip-child">
+          <img src="../strip-icons/grayhound.png" alt="" />
+          <p>Grayhound Racing</p>
+        </div>
+        <div class="strip-child">
+          <img src="../strip-icons/binary.png" alt="" />
+          <p>Binary</p>
+        </div>
+        <div class="strip-child">
+          <img src="../strip-icons/kabaddi.png" alt="" />
+          <p>Kabaddi</p>
+        </div>
+        <div class="strip-child">
+          <img src="../strip-icons/basketball.png" alt="" />
+          <p>Basketball</p>
+        </div>
+        <div class="strip-child">
+          <img src="../strip-icons/baseball.png" alt="" />
+          <p>Baseball</p>
+        </div>
+        <div class="strip-child">
+          <img src="../strip-icons/table-tennis.png" alt="" />
+          <p>Table Tennis</p>
+        </div>
+      </div>
+    </a>
+
+    <div class="sports-horizontal-list">
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">CRICKET</div>
+      </a>
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">FOOTBALL</div>
+      </a>
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">TENNIS</div>
+      </a>
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">POLITICS</div>
+      </a>
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="yellow sport-name">CASINO</div>
+      </a>
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="yellow sport-name">INT CASINO</div>
+      </a>
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="yellow sport-name">SPORTS BOOK</div></a
+      >
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">HORSE RACING</div></a
+      >
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">GREYHOUND RACING</div></a
+      >
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">BINARY</div></a
+      >
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">KABADDI</div></a
+      >
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">BASKETBALL</div></a
+      >
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">BASEBALL</div></a
+      >
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">TABLE TENNIS</div></a
+      >
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">VOLLEYBALL</div></a
+      >
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">ICE HOCKEY</div></a
+      >
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">RUGBY</div></a
+      >
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">MIXED MARTIAL ARTS</div></a
+      >
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">DARTS</div></a
+      >
+      <a class="common-link" href="http://wa.link/kudo">
+        <div class="sport-name">FUTSAL</div></a
+      >
+    </div>
+
+    <div class="body-grid">
+      
+        <div class="sidebar">
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/cricket-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Cricket</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/football-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Football</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/tennis-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Tennis</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/politics-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Politics</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/casino-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Casino</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/int-casino-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Int Casino</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/sports-book-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Sports book</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/horse-racing-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Horse Racing</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/greyhound-racing-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Greyhound Racing</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/binary-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Binary</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/kabaddi-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Kabaddi</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/basketball-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Basketball</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/baseball-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Baseball</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/table-tennis-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Table Tennis</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/volleyball-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Volleyball</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/ice-hockey-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Ice Hockey</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/rugby-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Rugby</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/mixed-martial-arts-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Mixed Martial Arts</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/darts-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Darts</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="tile">
+              <div class="icon-container">
+                <img
+                  class="sport-icon"
+                  src="../images/sidebar-icons/futsal-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">Futsal</div>
+            </div>
+          </a>
+    
+          <a class="common-link" href="http://wa.link/kudo">
+            <div class="social-links">
+              <p class="social-link-heading">Get Instant ID On Whatsapp</p>
+              <div class="whatsapp-container">
+                <div>
+                  <img
+                    class="wtsp-icon"
+                    src="../images/social-icons/wtsp-icon-removebg-preview.png"
+                    alt=""
+                  />
+                </div>
+                <div class="social-link-name">Whatsapp Now</div>
+              </div>
+              <div class="telegram-container">
+                <div>
+                  <img
+                    class="telegram-icon"
+                    src="../images/social-icons/telegram-icon-removebg-preview.png"
+                    alt=""
+                  />
+                </div>
+                <div class="social-link-name">Follow On Telegram</div>
+              </div>
+              <div class="instagram-container">
+                <div>
+                  <img
+                    class="insta-icon"
+                    src="../images/social-icons/insta-icon-removebg-preview.png"
+                    alt=""
+                  />
+                </div>
+                <div class="social-link-name">Follow On Instagram</div>
+              </div>
+            </div>
+          </a>
+        
+      </div>
+
+      <main>
+        <a class="common-link" href="http://wa.link/kudo">
+          <div class="gifs">
+            <div class="gif-container">
+              <img class="gif" src="../images/gif1.gif" />
+            </div>
+            <div class="gif-container">
+              <img class="gif" src="../images/gif2.gif" />
+            </div>
+            <div class="gif-container">
+              <img class="gif" src="../images/gif3.gif" />
+            </div>
+            <div class="gif-container">
+              <img class="gif" src="../images/gif4.webp" />
+            </div>
+            <div class="gif-container">
+              <img class="gif" src="../images/gif5.webp" />
+            </div>
+            <div class="gif-container">
+              <img class="gif" src="../images/gif6.webp" />
+            </div>
+            <div class="gif-container">
+              <img class="gif" src="../images/gif7.webp" />
+            </div>
+            <div class="gif-container">
+              <img class="gif" src="../images/gif8.webp" />
+            </div>
+          </div>
+        </a>
+  
+        <div class="main-button">
+          <a class="common-link" href="http://wa.link/kudo">
+            <button>PLAY WINBUZZ LIVE GAMES</button>
+          </a>
+          <div class="winbuzz-login-heading">
+            Winbuzz Login
+          </div>
+          <a class="common-link" href="http://wa.link/kudo">
+            <button>WINBUZZ LOGIN</button>
+          </a>
+          <a class="common-link" href="http://wa.link/kudo">
+            <button>WINBUZZ SINGUP</button>
+          </a>
+        </div>
+  
+        <div class="scroll-window-container">
+          <div class="left-scroll-container">
+            
+              <div class="scroll-window-header">Play Games</div>
+              <a class="common-link" href="http://wa.link/kudo">
+                <div>
+                  <img
+                    class="scroll-window-image"
+                    src="../images/window-image1.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+      
+              <a class="common-link" href="http://wa.link/kudo">
+                <div>
+                  <img
+                    class="scroll-window-image"
+                    src="../images/window-image2.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a class="common-link" href="http://wa.link/kudo">
+                <div>
+                  <img
+                    class="scroll-window-image"
+                    src="../images/window-image3.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a class="common-link" href="http://wa.link/kudo">
+                <div>
+                  <img
+                    class="scroll-window-image"
+                    src="../images/window-image4.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a class="common-link" href="http://wa.link/kudo">
+                <div>
+                  <img
+                    class="scroll-window-image"
+                    src="../images/window-image5.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+          </div>
+          <div class="right-scroll-container">
+            <div class="scroll-window-header">Play Games</div>
+            <div class="games-grid">
+              <div class="img-container">
+                <img class="game1" src="../images/game1.webp" alt="" />
+              </div>
+            
+              <div class="img-container">
+                <img class="game2" src="../images/game2.webp" alt="" />
+              </div>
+    
+              <div class="img-container">
+                <img class="game3" src="../images/game3.webp" alt="" />
+              </div>
+    
+              <div class="img-container">
+                <img class="game4" src="../images/game4.webp" alt="" />
+              </div>
+    
+              <div class="img-container">
+                <img class="game5" src="../images/game5.webp" alt="" />
+              </div>
+    
+              <div class="img-container">
+                <img class="game6" src="../images/game6.webp" alt="" />
+              </div>
+              <div class="img-container">
+                <img class="game6" src="../images/game7.webp" alt="" />
+              </div>
+              <div class="img-container">
+                <img class="game6" src="../images/game8.webp" alt="" />
+              </div>
+  
+            
+        </div>
+  
+        
+      </main>
+
+      <div class="scroll-window-right">
+        
+          <div class="upper-scroll-container">
+            
+              <div class="scroll-window-header">Play Games</div>
+              <a class="common-link" href="http://wa.link/kudo">
+                <div>
+                  <img
+                    class="scroll-window-image"
+                    src="../images/window-image1.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+      
+              <a class="common-link" href="http://wa.link/kudo">
+                <div>
+                  <img
+                    class="scroll-window-image"
+                    src="../images/window-image2.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a class="common-link" href="http://wa.link/kudo">
+                <div>
+                  <img
+                    class="scroll-window-image"
+                    src="../images/window-image3.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a class="common-link" href="http://wa.link/kudo">
+                <div>
+                  <img
+                    class="scroll-window-image"
+                    src="../images/window-image4.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a class="common-link" href="http://wa.link/kudo">
+                <div>
+                  <img
+                    class="scroll-window-image"
+                    src="../images/window-image5.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+          </div>
+          <div class="lower-scroll-container">
+            <div class="scroll-window-header">Play Games</div>
+            <div class="games-grid">
+              <div class="img-container">
+                <img class="game1" src="../images/game1.webp" alt="" />
+              </div>
+            
+              <div class="img-container">
+                <img class="game2" src="../images/game2.webp" alt="" />
+              </div>
+    
+              <div class="img-container">
+                <img class="game3" src="../images/game3.webp" alt="" />
+              </div>
+    
+              <div class="img-container">
+                <img class="game4" src="../images/game4.webp" alt="" />
+              </div>
+    
+              <div class="img-container">
+                <img class="game5" src="../images/game5.webp" alt="" />
+              </div>
+    
+              <div class="img-container">
+                <img class="game6" src="../images/game6.webp" alt="" />
+              </div>
+              <div class="img-container">
+                <img class="game6" src="../images/game7.webp" alt="" />
+              </div>
+              <div class="img-container">
+                <img class="game6" src="../images/game8.webp" alt="" />
+              </div>
+  
+        
+      </div>
+    </div>
+    </div>
+
+
+    <div class="photos">
+      <div class="photo1 photo-overlay-container">
+        <img src="../images/photo1.webp" alt="" />
+        <div class="overlay-button">
+          <a class="common-link" href="http://wa.link/kudo">
+            <button>PLAY NOW</button>
+          </a>
+        </div>
+      </div>
+      <div class="photo2 photo-overlay-container">
+        <img src="../images/photo2.webp" alt="" />
+        <div class="overlay-button">
+          <a class="common-link" href="http://wa.link/kudo">
+            <button>PLAY NOW</button>
+          </a>
+        </div>
+      </div>
+      <div class="photo3 photo-overlay-container">
+        <img src="../images/photo3.webp" alt="" />
+        <div class="overlay-button">
+          <a class="common-link" href="http://wa.link/kudo">
+            <button>PLAY NOW</button>
+          </a>
+        </div>
+      </div>
+      <div class="photo4 photo-overlay-container">
+        <img src="../images/photo4.webp" alt="" />
+        <div class="overlay-button">
+          <a class="common-link" href="http://wa.link/kudo">
+            <button>PLAY NOW</button>
+          </a>
+        </div>
+      </div>
+      <div class="photo5 photo-overlay-container">
+        <img src="../images/photo5.webp" alt="" />
+        <div class="overlay-button">
+          <a class="common-link" href="http://wa.link/kudo">
+            <button>PLAY NOW</button>
+          </a>
+        </div>
+      </div>
+      <div class="photo6 photo-overlay-container">
+        <img src="../images/photo6.webp" alt="" />
+        <div class="overlay-button">
+          <a class="common-link" href="http://wa.link/kudo">
+            <button>PLAY NOW</button>
+          </a>
+        </div>
+      </div>
+      <div class="photo7 photo-overlay-container">
+        <img src="../images/photo7.webp" alt="" />
+        <div class="overlay-button">
+          <a class="common-link" href="http://wa.link/kudo">
+            <button>PLAY NOW</button>
+          </a>
+        </div>
+      </div>
+      <div class="photo8 photo-overlay-container">
+        <img src="../images/photo8.webp" alt="" />
+        <div class="overlay-button">
+          <a class="common-link" href="http://wa.link/kudo">
+            <button>PLAY NOW</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
